@@ -7,7 +7,7 @@ import {
   subTitle,
   description,
   buttonName,
-} from '/public/locales/uk/home/Hero.json';
+} from 'src/locales/uk/home/Hero.json';
 
 export default function Hero() {
   return (
