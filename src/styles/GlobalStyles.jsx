@@ -3,9 +3,11 @@ import { css } from '@emotion/react';
 import 'modern-normalize';
 
 import { theme } from './theme';
+import ManropeExtraLight from '/fonts/Manrope-ExtraLight.ttf';
 import ManropeMedium from '/fonts/Manrope-Medium.ttf';
 import ManropeRegular from '/fonts/Manrope-Regular.ttf';
 import ManropeSemiBold from '/fonts/Manrope-SemiBold.ttf';
+import ManropeExtraBold from '/fonts/Manrope-ExtraBold.ttf';
 import MontserratRegular from '/fonts/Montserrat-Regular.ttf';
 import MontserratSemiBold from '/fonts/Montserrat-SemiBold.ttf';
 
@@ -58,6 +60,11 @@ export const GlobalStyles = css`
   // Fonts
   @font-face {
     font-family: 'Manrope';
+    font-weight: 200;
+    src: url(${ManropeExtraLight}) format('truetype');
+  }
+  @font-face {
+    font-family: 'Manrope';
     font-weight: 400;
     src: url(${ManropeRegular}) format('truetype');
   }
@@ -72,6 +79,11 @@ export const GlobalStyles = css`
     font-family: 'Manrope';
     font-weight: 600;
     src: url(${ManropeSemiBold}) format('truetype');
+  }
+  @font-face {
+    font-family: 'Manrope';
+    font-weight: 700;
+    src: url(${ManropeExtraBold}) format('truetype');
   }
 
   @font-face {
