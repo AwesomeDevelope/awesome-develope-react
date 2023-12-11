@@ -4,8 +4,8 @@ export function Home() {
   return (
     <>
       <Hero />
-      <DevelopmentStages />
       <Consultation />
+      <DevelopmentStages />
     </>
   );
 }
