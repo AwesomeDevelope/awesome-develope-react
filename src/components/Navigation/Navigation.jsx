@@ -2,6 +2,7 @@ import { Link, Nav } from './Navigation.styled';
 
 const Navigation = () => {
   const headerNav = [
+    { name: 'Home', href: '/' },
     { name: 'Contacts', href: '/contacts' },
     { name: 'Portfolio', href: '/portfolio' },
   ];
