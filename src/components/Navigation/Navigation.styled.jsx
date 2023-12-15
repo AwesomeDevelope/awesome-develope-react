@@ -14,11 +14,48 @@ export const Link = styled(NavLink)`
 
   &.active {
     color: ${({ theme }) => theme.colors.accent};
+    position: relative;
+  }
+
+  &.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    height: 4px;
+    background-color: ${({ theme }) => theme.colors.accent};
+    border-radius: 2px;
   }
 
   transition: color 250ms ease-in-out;
 
   :hover {
     color: ${({ theme }) => theme.colors.accent};
+    position: relative;
+  }
+
+  ::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    width: 0%;
+    height: 4px;
+    background-color: ${({ theme }) => theme.colors.accent};
+    border-radius: 2px;
+
+    transition: all 250ms ease-in-out;
+  }
+
+  :hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    height: 4px;
+    background-color: ${({ theme }) => theme.colors.accent};
+    border-radius: 2px;
   }
 `;
