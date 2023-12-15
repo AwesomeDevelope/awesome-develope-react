@@ -5,6 +5,7 @@ export const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
   gap: 15px;
+  color: ${({ theme }) => theme.colors.textWhite};
 
   :hover {
     color: ${({ theme }) => theme.colors.accent};

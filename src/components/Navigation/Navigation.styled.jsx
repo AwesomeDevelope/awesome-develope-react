@@ -3,11 +3,17 @@ import { NavLink } from 'react-router-dom';
 
 export const Nav = styled.nav`
   display: flex;
+  flex-direction: column;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export const Link = styled(NavLink)`
-  color: ${({ theme }) => theme.colors.textGrey_100};
+  color: ${({ theme }) => theme.colors.textWhite};
+  padding: 9px 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.11;
